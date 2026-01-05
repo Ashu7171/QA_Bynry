@@ -72,8 +72,7 @@ def test_project_creation_flow():
                 "Security violation: Project visible in wrong tenant!"
 
             browser.close()
-
-    finally:
-        # OPTIONAL: Cleanup (would use DELETE /api/v1/projects/{id} in real setup)
-        # requests.delete(f"{api_url}/{project_id}", headers=headers)
-        pass
+    except Exception as e:
+        # Cleanup: Delete project if test fails
+        requests.delete(f"{api_url}/{project_id}", headers=headers)
+        raise e
