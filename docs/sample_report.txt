@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-7.4.4, pluggy-1.3.0
+rootdir: /home/user/bynry-qa-case-study
+collected 3 items
+
+part1_flaky_test/test_login_fixed.py::test_user_login PASSED
+part1_flaky_test/test_login_fixed.py::test_multi_tenant_access PASSED
+part3_integration_test/test_project_creation_flow.py::test_project_creation_flow PASSED
+
+============================== 3 passed in 12.45s ==============================
