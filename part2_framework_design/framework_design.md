@@ -1,7 +1,6 @@
-```markdown
 # Test Automation Framework Design
 
-## 📁 Proposed Folder Structure
+## Proposed Folder Structure
 
 ```
 test-automation-framework/
@@ -24,7 +23,7 @@ test-automation-framework/
 └── reports/              # Test reports
 ```
 
-## ⚙️ Configuration Management
+## Configuration Management
 
 ### Environments
 Defined in `config/environments.yaml`:
@@ -55,7 +54,7 @@ mobile:
 - Loaded dynamically (e.g., `get_test_user(tenant="company1", role="admin")`)
 - Secrets (e.g., BrowserStack credentials) passed via environment variables
 
-## 🧩 Key Design Principles
+## Key Design Principles
 
 - **Page Object Model**: Reusable, maintainable UI abstractions
 - **Pytest Fixtures**: Isolated, reusable test setups (e.g., `logged_in_page`)
@@ -63,7 +62,7 @@ mobile:
 - **BrowserStack Integration**: Conditional remote execution in CI
 - **Tenant-Aware Tests**: Every test runs in a single tenant context by default
 
-## ❓ Missing Requirements – Key Questions
+## Missing Requirements – Key Questions
 
 1. How is **test data cleaned up** after execution?  
 2. Is **2FA disabled** for test accounts in staging?  
@@ -72,4 +71,3 @@ mobile:
 5. What **reporting format** is preferred (Allure, HTML, etc.)?  
 6. How are **secrets managed** in CI (e.g., BrowserStack credentials)?  
 7. Which **CI/CD platform** is used (GitHub Actions, Jenkins, etc.)?
-```
