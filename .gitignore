@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-.env
-venv/
-.env.local
-*.log
-reports/
-.DS_Store
